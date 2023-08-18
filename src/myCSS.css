@@ -35,3 +35,8 @@
     -fx-font-family: "Lato bold" "Calibri";
     -fx-font-weight: 700;
 }
+
+#display2{
+    -fx-font-weight: 400;
+    -fx-text-fill: #727c8c;
+}

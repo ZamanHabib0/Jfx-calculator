@@ -34,6 +34,9 @@ public class CalculatorController implements Initializable {
     @FXML
     private TextField display;
 
+     @FXML
+    private TextField display2;
+
     @FXML
     private Button clear;
 
@@ -107,6 +110,8 @@ public class CalculatorController implements Initializable {
             try {
                 double result = evaluateExpression(expression);
                 display.setText(String.valueOf(result));
+                 display2.setText(String.valueOf(expression));
+
             } catch (Exception e) {
                 display.setText("Error");
             }
