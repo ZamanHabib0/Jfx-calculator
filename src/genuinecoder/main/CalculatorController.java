@@ -34,7 +34,7 @@ public class CalculatorController implements Initializable {
     @FXML
     private TextField display;
 
-     @FXML
+    @FXML
     private TextField display2;
 
     @FXML
@@ -64,7 +64,7 @@ public class CalculatorController implements Initializable {
     @FXML
     private Button div;
 
-      @FXML
+    @FXML
     private Button five;
 
     @FXML
@@ -76,41 +76,306 @@ public class CalculatorController implements Initializable {
     @FXML
     void handleButtonAction(ActionEvent event) {
         if (event.getSource() == one) {
+        
+            String expression = display.getText() ;
+
+            if(expression.length() >= 0){
             display.setText(display.getText() + "1");
+            }
+             expression += "1";
+            if (expression.length() > 2 && expression.matches(".*[-+*/].*")) {
+                try {
+
+                    System.out.println(expression);
+
+                    double result = evaluateExpression(expression);
+                    display.setText(String.valueOf(expression));
+                    display2.setText(String.valueOf(result));
+                } catch (Exception e) {
+                    display.setText("Error");
+                }
+            }
+
         } else if (event.getSource() == two) {
+               String expression = display.getText() ;
+
+            if(expression.length() >= 0){
             display.setText(display.getText() + "2");
+            }
+             expression += "2";
+            if (expression.length() > 2 && expression.matches(".*[-+*/].*")) {
+                try {
+
+                    System.out.println(expression);
+
+                    double result = evaluateExpression(expression);
+                    display.setText(String.valueOf(expression));
+                    display2.setText(String.valueOf(result));
+                } catch (Exception e) {
+                    display.setText("Error");
+                }
+            }
         } else if (event.getSource() == three) {
+               String expression = display.getText() ;
+
+            if(expression.length() >= 0){
             display.setText(display.getText() + "3");
+            }
+             expression += "3";
+            if (expression.length() > 2 && expression.matches(".*[-+*/].*")) {
+                try {
+
+                    System.out.println(expression);
+
+                    double result = evaluateExpression(expression);
+                    display.setText(String.valueOf(expression));
+                    display2.setText(String.valueOf(result));
+                } catch (Exception e) {
+                    display.setText("Error");
+                }
+            }
         } else if (event.getSource() == four) {
+               String expression = display.getText() ;
+
+            if(expression.length() >= 0){
             display.setText(display.getText() + "4");
+            }
+             expression += "4";
+            if (expression.length() > 2 && expression.matches(".*[-+*/].*")) {
+                try {
+
+                    System.out.println(expression);
+
+                    double result = evaluateExpression(expression);
+                    display.setText(String.valueOf(expression));
+                    display2.setText(String.valueOf(result));
+                } catch (Exception e) {
+                    display.setText("Error");
+                }
+            }
         } else if (event.getSource() == five) {
+             String expression = display.getText() ;
+
+            if(expression.length() >= 0){
             display.setText(display.getText() + "5");
+            }
+             expression += "5";
+            if (expression.length() > 2 && expression.matches(".*[-+*/].*")) {
+                try {
+
+                    System.out.println(expression);
+
+                    double result = evaluateExpression(expression);
+                    display.setText(String.valueOf(expression));
+                    display2.setText(String.valueOf(result));
+                } catch (Exception e) {
+                    display.setText("Error");
+                }
+            }
         } else if (event.getSource() == six) {
+               String expression = display.getText() ;
+
+            if(expression.length() >= 0){
             display.setText(display.getText() + "6");
+            }
+             expression += "6";
+            if (expression.length() > 2 && expression.matches(".*[-+*/].*")) {
+                try {
+
+                    System.out.println(expression);
+
+                    double result = evaluateExpression(expression);
+                    display.setText(String.valueOf(expression));
+                    display2.setText(String.valueOf(result));
+                } catch (Exception e) {
+                    display.setText("Error");
+                }
+            }
         } else if (event.getSource() == seven) {
+            String expression = display.getText() ;
+
+            if(expression.length() >= 0){
             display.setText(display.getText() + "7");
+            }
+             expression += "7";
+            if (expression.length() > 2 && expression.matches(".*[-+*/].*")) {
+                try {
+
+                    System.out.println(expression);
+
+                    double result = evaluateExpression(expression);
+                    display.setText(String.valueOf(expression));
+                    display2.setText(String.valueOf(result));
+                } catch (Exception e) {
+                    display.setText("Error");
+                }
+            }
         } else if (event.getSource() == eight) {
+            String expression = display.getText() ;
+
+            if(expression.length() >= 0){
             display.setText(display.getText() + "8");
+            }
+             expression += "8";
+            if (expression.length() > 2 && expression.matches(".*[-+*/].*")) {
+                try {
+
+                    System.out.println(expression);
+
+                    double result = evaluateExpression(expression);
+                    display.setText(String.valueOf(expression));
+                    display2.setText(String.valueOf(result));
+                } catch (Exception e) {
+                    display.setText("Error");
+                }
+            }
         } else if (event.getSource() == nine) {
+               String expression = display.getText() ;
+
+            if(expression.length() >= 0){
             display.setText(display.getText() + "9");
+            }
+             expression += "9";
+            if (expression.length() > 2 && expression.matches(".*[-+*/].*")) {
+                try {
+
+                    System.out.println(expression);
+
+                    double result = evaluateExpression(expression);
+                    display.setText(String.valueOf(expression));
+                    display2.setText(String.valueOf(result));
+                } catch (Exception e) {
+                    display.setText("Error");
+                }
+            }
         } else if (event.getSource() == zero) {
+               String expression = display.getText() ;
+
+            if(expression.length() > 0){
             display.setText(display.getText() + "0");
+            }
+             expression += "0";
+            if (expression.length() > 2 && expression.matches(".*[-+*/].*")) {
+                try {
+
+                    System.out.println(expression);
+
+                    double result = evaluateExpression(expression);
+                    display.setText(String.valueOf(expression));
+                    display2.setText(String.valueOf(result));
+                } catch (Exception e) {
+                    display.setText("Error");
+                }
+            }
         } else if (event.getSource() == clear) {
             display.setText("");
+            display2.setText("");
         } else if (event.getSource() == plus) {
-            display.setText(display.getText() + "+");
+            String data = display.getText();
+
+            int lastIndex = data.length() - 1;
+            char lastCharacter = data.charAt(lastIndex);
+            if (lastIndex == 0) {
+                if (lastCharacter == '-') {
+
+                } else {
+                    display.setText(display.getText() + "+");
+                }
+            } else if (lastIndex >= 0) {
+
+                if (lastCharacter == '/' || lastCharacter == '+' || lastCharacter == '*' || lastCharacter == '-') {
+                    StringBuilder stringBuilder = new StringBuilder(data);
+                    stringBuilder.setCharAt(data.length() - 1, '+');
+                    String modifiedString = stringBuilder.toString();
+                    display.setText(modifiedString);
+                } else {
+                    display.setText(display.getText() + "+");
+                }
+
+            }
+
         } else if (event.getSource() == minus) {
-            display.setText(display.getText() + "-");
+            String data = display.getText();
+
+            int lastIndex = data.length() - 1;
+
+            if (lastIndex >= 0) {
+                char lastCharacter = data.charAt(lastIndex);
+
+                if (lastCharacter == '/' || lastCharacter == '+' || lastCharacter == '*' || lastCharacter == '-') {
+                    StringBuilder stringBuilder = new StringBuilder(data);
+                    stringBuilder.setCharAt(data.length() - 1, '-');
+                    String modifiedString = stringBuilder.toString();
+                    display.setText(modifiedString);
+                } else {
+                    display.setText(display.getText() + "-");
+                }
+            } else {
+                display.setText(display.getText() + "-");
+            }
+
         } else if (event.getSource() == mult) {
-            display.setText(display.getText() + "*");
+
+            String data = display.getText();
+
+            int lastIndex = data.length() - 1;
+            char lastCharacter = data.charAt(lastIndex);
+            if (lastIndex == 0) {
+                if (lastCharacter == '-') {
+
+                } else {
+                    display.setText(display.getText() + "*");
+                }
+            }
+
+            else if (lastIndex >= 0) {
+
+                if (lastCharacter == '/' || lastCharacter == '+' || lastCharacter == '*' || lastCharacter == '-') {
+                    StringBuilder stringBuilder = new StringBuilder(data);
+                    stringBuilder.setCharAt(data.length() - 1, '*');
+                    String modifiedString = stringBuilder.toString();
+
+                    display.setText(modifiedString);
+                } else {
+                    display.setText(display.getText() + "*");
+                }
+
+            }
+
         } else if (event.getSource() == div) {
-            display.setText(display.getText() + "/");
+
+            String data = display.getText();
+
+            int lastIndex = data.length() - 1;
+            char lastCharacter = data.charAt(lastIndex);
+            System.out.println(lastIndex);
+            if (lastIndex == 0) {
+                if (lastCharacter == '-') {
+                    System.out.println(lastIndex);
+                } else {
+                    display.setText(display.getText() + "/");
+                }
+            }
+
+            else if (lastIndex >= 0) {
+
+                if (lastCharacter == '/' || lastCharacter == '+' || lastCharacter == '*' || lastCharacter == '-') {
+                    StringBuilder stringBuilder = new StringBuilder(data);
+                    stringBuilder.setCharAt(data.length() - 1, '/');
+                    String modifiedString = stringBuilder.toString();
+                    display.setText(modifiedString);
+                } else if (lastCharacter != '-') {
+                    display.setText(display.getText() + "/");
+                }
+
+            }
+
         } else if (event.getSource() == equals) {
             String expression = display.getText();
             try {
                 double result = evaluateExpression(expression);
                 display.setText(String.valueOf(result));
-                 display2.setText(String.valueOf(expression));
+                display2.setText(String.valueOf(expression));
 
             } catch (Exception e) {
                 display.setText("Error");
@@ -124,9 +389,15 @@ public class CalculatorController implements Initializable {
 
         for (int i = 0; i < expression.length(); i++) {
             char ch = expression.charAt(i);
-            if (Character.isDigit(ch)) {
+            if (Character.isDigit(ch) || ch == '-' && ch == expression.charAt(0) ) {
                 StringBuilder numStr = new StringBuilder();
-                while (i < expression.length() && (Character.isDigit(expression.charAt(i)) || expression.charAt(i) == '.')) {
+
+                if (ch == '-' ) {
+                    numStr.append('-'); // Add the negative sign to the number
+                    i++; // Move to the next character
+                }
+                while (i < expression.length()
+                        && (Character.isDigit(expression.charAt(i)) || expression.charAt(i) == '.')) {
                     numStr.append(expression.charAt(i));
                     i++;
                 }
