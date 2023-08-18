@@ -1,0 +1,37 @@
+#AnchorPane{
+    -fx-background-color: #262d37;
+    -fx-min-width: 100px;
+    -fx-padding: 5 10 5 40;
+}
+
+
+
+.button{
+    -fx-spacing: 0;
+    -fx-background-color: #252c36;
+    -fx-text-fill: white;
+    -fx-min-width: 70px;
+    -fx-min-height: 70px;
+    /* -fx-border-color: derive(#252c36, -30%); */
+    -fx-border-width: 0.2px;
+    -fx-background-radius: 20;
+    -fx-font-size: 20pt;
+    -fx-font-family: "Lato bold" "Calibri";
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 5);
+
+}
+
+.button:hover{
+    -fx-background-color: derive(#347c8a, -20%);
+    -fx-font-size: 24pt;
+    -fx-font-weight: 700;
+    -fx-background-radius: 20;
+    -fx-text-fill: whitesmoke;
+}
+
+.text-field{
+    -fx-background-color: #262d37;
+    -fx-text-fill: white;
+    -fx-font-family: "Lato bold" "Calibri";
+    -fx-font-weight: 700;
+}
